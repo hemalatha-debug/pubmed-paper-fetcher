@@ -23,8 +23,8 @@ Combined Options
 python cli.py "COVID-19 treatment" -f covid_results.csv -d
 Command Line Arguments
 query (required): PubMed search query string
--f, --file: CSV output file name
--d, --debug: Enable debug mode to see search progress
+                 -f, --file: CSV output file name
+                 -d, --debug: Enable debug mode to see search progress
 Example Queries
 "cancer immunotherapy" - Find papers about cancer immunotherapy
 "CAR-T cell therapy" - Search for CAR-T cell research
@@ -61,15 +61,3 @@ pubmed-fetcher/
 ├── pyproject.toml        # Project configuration
 └── README.md             # This file
 API Rate Limits
-This tool uses NCBI's E-utilities API, which has usage guidelines:
-
-No more than 3 requests per second
-The tool fetches up to 100 papers per search by default
-License
-This project is open source and available under standard terms.
-
-Author
-Created by Assistant
-
-Contributing
-Feel free to submit issues or pull requests to improve the tool's functionality or add new features.
