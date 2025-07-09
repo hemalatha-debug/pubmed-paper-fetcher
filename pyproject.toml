@@ -1,7 +1,19 @@
 [project]
-name = "python-template"
+name = "pubmed-fetcher"
 version = "0.1.0"
 description = ""
 authors = ["Your Name <you@example.com>"]
+packages = [{ include = "pubmed_fetcher" }]
 requires-python = ">=3.11"
 dependencies = []
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+
+[tool.poetry.scripts]
+get-papers-list = "pubmed_fetcher.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
